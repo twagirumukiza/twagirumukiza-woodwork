@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Sculptures — Innocent Twagirumukiza</title>
+  <style>
+    :root { --bg:#f6f3ee; --paper:#fffdf9; --ink:#181818; --muted:#6e675f; --line:#e0d9cf; --accent:#b79f84; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--ink); }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1120px,92vw); margin:0 auto; }
+    header { position:sticky; top:0; backdrop-filter: blur(8px); background:rgba(246,243,238,.88); border-bottom:1px solid var(--line); z-index:10; }
+    .nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; }
+    .brand { font-weight:700; letter-spacing:.12em; font-size:.9rem; text-transform:uppercase; }
+    .hero { padding:72px 0 36px; }
+    .eyebrow { color:var(--muted); text-transform:uppercase; letter-spacing:.12em; font-size:.78rem; }
+    h1 { font-size: clamp(2rem, 5vw, 4rem); line-height:1.02; margin:.35em 0 .2em; }
+    .lead { max-width:760px; font-size:1.1rem; color:#3e3a36; line-height:1.7; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:24px; padding:24px 0 72px; }
+    .card { background:var(--paper); border:1px solid var(--line); border-radius:24px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,.04); }
+    .card a { display:block; }
+    .thumb-wrap { aspect-ratio:4/5; background:#111; display:flex; align-items:center; justify-content:center; }
+    .thumb-wrap img { width:100%; height:100%; object-fit:cover; transition:transform .25s ease; }
+    .card:hover .thumb-wrap img { transform:scale(1.02); }
+    .card-body { padding:18px 18px 22px; }
+    .meta { color:var(--muted); font-size:.94rem; margin-top:6px; }
+    .links { display:flex; gap:14px; flex-wrap:wrap; margin-top:18px; }
+    .chip { border:1px solid var(--line); border-radius:999px; padding:10px 14px; background:var(--paper); }
+    footer { border-top:1px solid var(--line); padding:28px 0 44px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Twagirumukiza</div>
+      <div class="links">
+        <a class="chip" href="https://www.saatchiart.com" target="_blank" rel="noopener">Saatchi Art</a>
+        <a class="chip" href="https://pin.it/6LueK8avX" target="_blank" rel="noopener">Pinterest</a>
+        <a class="chip" href="https://www.instagram.com/inno_twa/" target="_blank" rel="noopener">@inno_twa</a>
+        <a class="chip" href="https://www.instagram.com/inno_twag/" target="_blank" rel="noopener">@inno_twag</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Sculptures</div>
+      <h1>Material, trace, and vertical presence.</h1>
+      <p class="lead">A curated selection of sculptures and bas-reliefs by Innocent Twagirumukiza. Each page opens to a dedicated work presentation, with the main image now opening directly in full size in a new tab for a cleaner viewing experience.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <a href="ashanti-doll.html">
+          <div class="thumb-wrap"><img src="images/ashanti-doll.jpg" alt="Ashanti Doll — Contemporary Interpretation" /></div>
+          <div class="card-body"><strong>Ashanti Doll — Contemporary Interpretation</strong><div class="meta">Cardboard and plaster</div></div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="totem-interlaced-form.html">
+          <div class="thumb-wrap"><img src="images/totem-interlaced-form.jpg" alt="Totem — Interlaced Form" /></div>
+          <div class="card-body"><strong>Totem — Interlaced Form</strong><div class="meta">Wood</div></div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="totem-modular-geometry.html">
+          <div class="thumb-wrap"><img src="images/totem-modular-geometry.jpg" alt="Totem — Modular Geometry" /></div>
+          <div class="card-body"><strong>Totem — Modular Geometry</strong><div class="meta">Wood</div></div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="bas-relief-vertical-traces.html">
+          <div class="thumb-wrap"><img src="images/bas-relief-vertical-traces.jpg" alt="Bas-Relief — Vertical Traces" /></div>
+          <div class="card-body"><strong>Bas-Relief — Vertical Traces</strong><div class="meta">Wood</div></div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="totems-vertical-presences.html">
+          <div class="thumb-wrap"><img src="images/totems-vertical-presences.jpg" alt="Totems — Vertical Presences" /></div>
+          <div class="card-body"><strong>Totems — Vertical Presences</strong><div class="meta">Wood, plaster</div></div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="totems-rhythmic-figures.html">
+          <div class="thumb-wrap"><img src="images/totems-rhythmic-figures.jpg" alt="Totems — Rhythmic Figures" /></div>
+          <div class="card-body"><strong>Totems — Rhythmic Figures</strong><div class="meta">Wood, plaster</div></div>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© Innocent Twagirumukiza — Sculptures </div>
+  </footer>
+</body>
+</html>
